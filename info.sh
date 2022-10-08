@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
+echo "Enter filename"
 read -p 'File: ' FILENAME
-
+# read the file size
+filesize=$(ls -lh $FILENAME | awk '{print  $5}')
+echo "$FILENAME has a size of $filesize"
 # see how many data in this datasets
 lines=$(wc -l < $FILENAME)
 echo ""
@@ -11,3 +14,5 @@ columns=$(head -n 1 < $FILENAME)
 echo "This dataset include variables:"
 echo "$columns"
 echo ""
+
+
