@@ -1,4 +1,4 @@
-name: Python application test with Github Actions using devcontainers
+name: Bash application test with Github Actions using devcontainers
 on: [push]
 jobs:
   build:
@@ -6,10 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: test build-Build and run dev container task
-      uses: devcontainers/ci@v0.2
       with:
         runCmd: |
           make install
-          make lint
-          make test
-          make format
+
