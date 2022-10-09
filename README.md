@@ -6,7 +6,7 @@ This project aims to categorize data of patients with their risk score for getti
 
 # Project files
 ## Configuration
-* Dockerfile
+* Dockerfile: a file to create my docker image. This image has been pushed to Docker Hub.
 * ./devcontainer/devontainer: build a image based on the Dockerfile, create and activate a virtual environment by adding these steps in to ```~/.bashrc``` file, and install pacakges with ```make install```
 * Makefile: Compiling and configuration for the codespaces.
 * requirements.txt: required packages.
@@ -28,3 +28,4 @@ This project aims to categorize data of patients with their risk score for getti
 
 
 # Data Source
+https://www.kaggle.com/datasets/mokar2001/ascvd-heart-risk
