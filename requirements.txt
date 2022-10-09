@@ -1,1 +1,4 @@
 kaggle
+pytest
+pylint
+ipython
